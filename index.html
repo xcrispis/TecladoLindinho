@@ -123,7 +123,7 @@
         window.addEventListener("keydown", function (e) {
             code = (code + String.fromCharCode(e.keyCode || e.which)).substr(-51);
             console.log(code);
-            if (code == "TTTTECLADO LINDINHOTECLADO LINDINHO TECLADOLINDINHO") {
+            if (code == "TTTTECLADO LINDINHOTECLADO LINDINHOTECLADO LINDINHO") {
                 window.removeEventListener("keydown", arguments.callee);
                 let pancadao = document.getElementById("teclado");
                 pancadao.play();
