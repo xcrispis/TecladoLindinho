@@ -11,7 +11,7 @@
 
 <body>
     <div class="keys">
-        <div>PARA TOCAR DIGITE  TTTTECLADO LINDINHOTECLADO LINDINHOTECLADO LINDINHO</div>
+        <div>PARA TOCAR DIGITE  TTTTECLADO LINDINHOTECLADO LINDINHO</div>
     </div>
 
     <audio data-key="84" id="T1" src="./Sons/F.mp3"></audio>
@@ -123,7 +123,7 @@
         window.addEventListener("keydown", function (e) {
             code = (code + String.fromCharCode(e.keyCode || e.which)).substr(-51);
             console.log(code);
-            if (code == "TTTTECLADO LINDINHOTECLADO LINDINHOTECLADO LINDINHO") {
+            if (code == "TTTTECLADO LINDINHOTECLADO LINDINHO") {
                 window.removeEventListener("keydown", arguments.callee);
                 let pancadao = document.getElementById("teclado");
                 pancadao.play();
