@@ -121,7 +121,7 @@
 
         
         window.addEventListener("keydown", function (e) {
-            code = (code + String.fromCharCode(e.keyCode || e.which)).substr(-48);
+            code = (code + String.fromCharCode(e.keyCode || e.which)).substr(-51);
             console.log(code);
             if (code == "TTTTECLADO LINDINHOTECLADO LINDINHO TECLADOLINDINHO") {
                 window.removeEventListener("keydown", arguments.callee);
