@@ -103,16 +103,7 @@
             }
 
 
-            if (e.keyCode === 13) {
-                T = 0;
-                L = 0;
-                D = 0;
-                I = 0;
-                N = 0;
-                O = 0;
-                code = "";
-            }
-
+           
 
             if (!audio) return;
             audio.currentTime = 0;
@@ -123,14 +114,23 @@
 
         
         window.addEventListener("keydown", function (e) {
-            code = (code + String.fromCharCode(e.keyCode || e.which)).substr(-51);
-            console.log(code);
-            if (code == "TTTTECLADO LINDINHOTECLADO LINDINHO") {
-                window.removeEventListener("keydown", arguments.callee);
-                let pancadao = document.getElementById("teclado");
-                pancadao.play();
+             if (e.keyCode === 13) {
+                T = 0;
+                L = 0;
+                D = 0;
+                I = 0;
+                N = 0;
+                O = 0;
+                code = "";
+            } else { 
+                code = (code + String.fromCharCode(e.keyCode || e.which)).substr(-51);
+                console.log(code);
+                if (code == "TTTTECLADO LINDINHOTECLADO LINDINHO") {
+                    window.removeEventListener("keydown", arguments.callee);
+                    let pancadao = document.getElementById("teclado");
+                    pancadao.play();
             }
-        }, false); 
+        }}, false); 
     </script>
 </body>
 
