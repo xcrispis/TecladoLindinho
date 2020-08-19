@@ -114,6 +114,7 @@
 
         
         window.addEventListener("keydown", function (e) {
+            let pancadao = document.getElementById("teclado");
              if (e.keyCode === 13) {
                 T = 0;
                 L = 0;
@@ -122,12 +123,12 @@
                 N = 0;
                 O = 0;
                 code = "";
+                pancadao.load();
             } else { 
                 code = (code + String.fromCharCode(e.keyCode || e.which)).substr(-51);
                 console.log(code);
                 if (code == "TTTTECLADO LINDINHOTECLADO LINDINHO") {
                     window.removeEventListener("keydown", arguments.callee);
-                    let pancadao = document.getElementById("teclado");
                     pancadao.play();
             }
         }}, false); 
